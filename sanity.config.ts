@@ -1,6 +1,7 @@
 import { defineConfig } from 'sanity';
 import { deskTool } from 'sanity/desk';
 import product from './schemas/product';
+import aplicacion from './schemas/aplicacion';
 
 export default defineConfig({
   name: 'prolinsa',
@@ -10,6 +11,6 @@ export default defineConfig({
   apiVersion: process.env.SANITY_API_VERSION || '2025-01-01',
   plugins: [deskTool()],
   schema: {
-    types: [product],
+    types: [product, aplicacion],
   },
 });
