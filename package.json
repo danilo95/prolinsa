@@ -15,7 +15,8 @@
     "@sanity/image-url": "^1.2.0",
     "firebase": "^12.5.0",
     "firebase-admin": "^13.6.0",
-    "next": "16.0.1",
+    "lucide-react": "^0.553.0",
+    "next": "^16.0.2",
     "next-sanity": "^11.6.5",
     "react": "19.2.0",
     "react-dom": "19.2.0"
