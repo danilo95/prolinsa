@@ -6,37 +6,10 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header/Navigation */}
-      <header className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-          <div className="flex items-center">
-          <div className="flex items-center">
-            <div className="w-40 h-20 rounded-lg flex items-center justify-center">
-              <Image
-                src="/logo.png"      
-                alt="Logo"
-                width={500}           
-                height={98}
-                priority             // Carga rápida si es parte del encabezado
-              />
-            </div>
-          </div>
-
-          </div>
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-600 hover:text-gray-900">Prodelinsa</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">Catálogo</a>
-            <a href="#" className="text-blue-600 font-semibold">Contacto</a>
-            <button className="text-gray-600 hover:text-gray-900">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-              </svg>
-            </button>
-          </div>
-        </nav>
-      </header>
+      
 
       {/* Main Content */}
-      <main className="pt-24 pb-16">
+      <main className="pt-8 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             
@@ -108,36 +81,6 @@ const ContactPage = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-100 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Left side */}
-            <div className="space-y-4">
-              <div className="space-y-2">
-                <a href="#" className="block text-blue-600 hover:text-blue-700 font-semibold">FACEBOOK</a>
-                <a href="#" className="block text-pink-600 hover:text-pink-700 font-semibold">INSTAGRAM</a>
-                <a href="#" className="block text-green-600 hover:text-green-700 font-semibold">WHATSAPP</a>
-              </div>
-              <p className="text-sm text-gray-600">
-                © 2022 Prodelinsa | Powered by Tema Astra para WordPress
-              </p>
-            </div>
-
-            {/* Right side */}
-            <div className="space-y-4 md:text-right">
-              <div className="space-y-2">
-                <p className="text-gray-700 font-semibold">PRODELINSA® EL SALVADOR</p>
-                <a href="#" className="block text-gray-600 hover:text-gray-900">COTIZAR PRODUCTO</a>
-                <a href="#" className="block text-gray-600 hover:text-gray-900">OPORTUNIDAD LABORAL</a>
-              </div>
-              <div className="flex space-x-6 md:justify-end">
-                <a href="#" className="text-gray-600 hover:text-gray-900">CONDICIONES DE USO</a>
-                <a href="#" className="text-gray-600 hover:text-gray-900">POLÍTICA DE PRIVACIDAD</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
