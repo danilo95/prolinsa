@@ -4,6 +4,7 @@ export const LIST_APLICACIONES = /* groq */ `
 *[_type == "aplicacion"] | order(_createdAt desc){
   "id": _id,
   titulo,
+  descripcion,
   "slug": slug.current
 }
 `;
