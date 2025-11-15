@@ -4,9 +4,7 @@ import Image from 'next/image';
 
 const ContactPage = () => {
   return (
-    <div className="min-h-screen bg-white">
-      {/* Header/Navigation */}
-      
+    <div className="min-h-screen bg-white"> 
 
       {/* Main Content */}
       <main className="pt-8 py-16">

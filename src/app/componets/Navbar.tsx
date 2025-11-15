@@ -1,11 +1,12 @@
 'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation'; 
+import { usePathname } from 'next/navigation'; // 👈 este es el hook correcto
 
 const Navbar = () => {
-  const router = useRouter();
+  const pathname = usePathname(); // 👈 obtiene la ruta actual
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
@@ -26,7 +27,7 @@ const Navbar = () => {
           <Link 
             href="/prodelinsa" 
             className={`${
-              router.pathname === '/prodelinsa' 
+              pathname === '/prodelinsa' 
                 ? 'text-blue-600 font-semibold' 
                 : 'text-gray-600 hover:text-gray-900'
             }`}
@@ -36,7 +37,7 @@ const Navbar = () => {
           <Link 
             href="/catalogo" 
             className={`${
-              router.pathname === '/catalogo' 
+              pathname === '/catalogo' 
                 ? 'text-blue-600 font-semibold' 
                 : 'text-gray-600 hover:text-gray-900'
             }`}
@@ -46,12 +47,23 @@ const Navbar = () => {
           <Link 
             href="/contacto" 
             className={`${
-              router.pathname === '/contacto' 
+              pathname === '/contacto' 
                 ? 'text-blue-600 font-semibold' 
                 : 'text-gray-600 hover:text-gray-900'
             }`}
           >
             Contacto
+          </Link>
+
+          <Link 
+            href="/vacantes" 
+            className={`${
+              pathname === '/vacantes' 
+                ? 'text-blue-600 font-semibold' 
+                : 'text-gray-600 hover:text-gray-900'
+            }`}
+          >
+            Trabaja con nosotros
           </Link>
           <button className="text-gray-600 hover:text-gray-900">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
