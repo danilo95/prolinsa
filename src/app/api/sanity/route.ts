@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { adminDb } from '@/lib/firebase-admin';
+import { adminDb } from '../../../../lib/firebase-admin';
 import { createHmac, timingSafeEqual } from 'crypto';
 import imageUrlBuilder from '@sanity/image-url';
 import { createClient } from 'next-sanity';
