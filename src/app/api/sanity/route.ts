@@ -5,7 +5,7 @@ import imageUrlBuilder from '@sanity/image-url';
 import { createClient } from 'next-sanity';
 
 const sanity = createClient({
-  projectId: process.env.SANITY_PROJECT_ID!,
+  projectId: '6vc0fdxe',
   dataset: process.env.SANITY_DATASET!,
   apiVersion: process.env.SANITY_API_VERSION || '2025-01-01',
   useCdn: false,
@@ -13,7 +13,7 @@ const sanity = createClient({
 });
 
 const builder = imageUrlBuilder({
-  projectId: process.env.SANITY_PROJECT_ID!,
+  projectId: '6vc0fdxe',
   dataset: process.env.SANITY_DATASET!,
 });
 
