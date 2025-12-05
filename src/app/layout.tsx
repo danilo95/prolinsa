@@ -1,19 +1,7 @@
-import './globals.css';
-import type { Metadata } from 'next';
+// app/layout.tsx
+import type { ReactNode } from 'react';
+import SiteLayout from './SiteLayout'; // o desde components/SiteLayout
 
-export const metadata: Metadata = {
-  title: 'Catalog',
-  description: 'Sanity -> Firestore -> Next.js Catalog',
-};
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang='es'>
-      <body>{children}</body>
-    </html>
-  );
+export default function RootLayout({ children }: { children: ReactNode }) {
+  return <SiteLayout>{children}</SiteLayout>;
 }
