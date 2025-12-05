@@ -11,6 +11,9 @@ export type Aplicacion = {
   titulo: string;
   descripcion?: string;
   requisitos?: string;
+  slug: {
+    current: string;
+  };
   sexo?: 'indiferente' | 'masculino' | 'femenino';
   edad?: 'indiferente' | string;
   notas?: string;
