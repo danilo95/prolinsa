@@ -24,8 +24,7 @@ export default async function AplicacionesPage() {
             Aplicaciones
           </h1>
           <p className='text-gray-600 max-w-2xl mx-auto'>
-            Explora nuestras aplicaciones disponibles y descubre herramientas
-            creadas para facilitar tu día a día.
+            Explora nuestras plazas disponibles y unete a nuestro equipo.
           </p>
         </div>
 

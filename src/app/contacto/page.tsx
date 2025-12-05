@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 export default function ContactoPage() {
   return (
@@ -49,18 +50,20 @@ export default function ContactoPage() {
               <h2 className='text-2xl font-bold text-blue-600'>Síguenos</h2>
 
               <div className='flex items-center gap-4 text-3xl'>
-                <Link href='https://facebook.com' aria-label='Facebook'>
-                  <span>facebook</span>
-                </Link>
-                <Link href='https://instagram.com' aria-label='Instagram'>
-                  <span>instagram</span>
-                </Link>
-                <Link href='https://youtube.com' aria-label='YouTube'>
-                  <span>youtube</span>
-                </Link>
-                <Link href='https://wa.me/50378022593' aria-label='WhatsApp'>
-                  <span>wa</span>
-                </Link>
+                
+                <a href="https://www.instagram.com/prodelinsasv?igsh=MTZscXo4bnZsNTVtYQ==" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-pink-600 hover:text-pink-700 font-semibold">
+                  <FaInstagram size={35} />
+                </a>
+
+                <a
+                  href="https://wa.me/50312345678" // reemplaza con tu número
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold"
+                >
+                  <FaWhatsapp size={35} />
+                </a>
+                
               </div>
             </div>
           </div>
